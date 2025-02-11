@@ -21,6 +21,8 @@ with col2:
 if generate_button:
     k_str = str(k).zfill(4)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
-        st.write(f"The number {k} have same four digits.\nRetry")
+        st.write(f"The number {k} have same four digits.")
+        st.write("Retry.")
+        st.stop()
     else:
         st.write("goon")
