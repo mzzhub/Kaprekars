@@ -33,7 +33,6 @@ if generate_button:
         k_asc = "".join(sorted(k_str))
         st.write(k_desc, k_asc)
 
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            retry_button = st.button("**Retry**", use_container_width=True)
-            
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        retry_button = st.button("**Retry**", use_container_width=True)
