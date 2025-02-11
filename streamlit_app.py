@@ -13,7 +13,6 @@ if k == None:
     k = np.random.randint(10000)
 
 if st.button("**Generate**"):
-    k_str = str(k)
+    k_str = str(k).zfill(4)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         st.write("Break")
-        
