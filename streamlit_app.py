@@ -15,7 +15,7 @@ if k == None:
 
 # Center align buttons
 col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
+with col1:
     generate_button = st.button("**Generate**", use_container_width=True)
 
 
