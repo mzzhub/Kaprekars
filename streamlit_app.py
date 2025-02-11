@@ -24,7 +24,7 @@ if generate_button:
     st.write("Checking for all same digits...")
     time.sleep(2)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
-        st.warning(f"The number {k} have same four digits.", icon="⚠️")
+        st.warning(f" The number {k} have same four digits.", icon="⚠️")
         st.write("Retry.")
         st.stop()
     else:
@@ -32,3 +32,7 @@ if generate_button:
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
         st.write(k_desc, k_asc)
+
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            retry_button = st.button("**Retry**", use_container_width=True)
