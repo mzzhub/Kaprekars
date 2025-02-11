@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import time
 
 st.title("Kaprekars Constant Attainer 🧮")
 
@@ -19,12 +20,15 @@ with col2:
 
 
 if generate_button:
-    k_str = str(k).zfill(4)
+    k_str = str(k).zfill(4) # leading zeros
+    st.write("Checking for all same digits...")
+    time.sleep(2)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         st.write(f"The number {k} have same four digits.")
         st.write("Retry.")
         st.stop()
     else:
+        st.write("Good to go. 👍")
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
         st.write(k_desc, k_asc)
