@@ -26,7 +26,7 @@ if generate_button:
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         st.warning(f" The number {k} have same four digits.", icon="⚠️")
         col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
-        with col2:
+        with col1:
             retry_button = st.button("**Retry**", use_container_width=True)
         st.stop()
     else:
