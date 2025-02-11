@@ -25,4 +25,6 @@ if generate_button:
         st.write("Retry.")
         st.stop()
     else:
-        st.write("goon")
+        k_desc = "".join(sorted(k_str, reverse = True))
+        k_asc = "".join(sorted(k_str))
+        st.write(k_desc, k_asc)
