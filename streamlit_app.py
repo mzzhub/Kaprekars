@@ -24,7 +24,7 @@ if generate_button:
     st.write("Checking for all same digits...")
     time.sleep(2)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
-        st.write(f"The number {k} have same four digits.")
+        st.warning(f"The number {k} have same four digits.")
         st.write("Retry.")
         st.stop()
     else:
