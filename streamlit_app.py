@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import time
 
-st.title("Kaprekars Constant Attainer 🧮", anchor = False)
+st.title("Kaprekar's Constant Attainer 🧮", anchor = False)
 
 
 k = st.number_input(
@@ -15,6 +15,8 @@ k = st.number_input(
 col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
 with col1:
     generate_button = st.button("**Generate**", use_container_width=True)
+with col2, col3:
+    st.link_button("What is Kaprekar's Constant?", "https://en.wikipedia.org/wiki/6174")
 
 
 if generate_button:
@@ -47,7 +49,7 @@ if generate_button:
         st.stop()
     else:
         placeholder.write("Atleast two different digits included. ✅")
-        time.sleep(1)
+        time.sleep(2)
         placeholder.write("")
         first_time = True
         last_time = False
@@ -99,7 +101,7 @@ if generate_button:
 
                 st.markdown("""
                     <h1 style='font-size:50px;'>
-                        Hence,<br><span style='color:red;'>Kaprekar's Constant - 6174</span><br>attained
+                        Hence,<br><span style='color:red;'>Kaprekar's Constant - 6174</span><br>attained.
                     </h1>
                 """, unsafe_allow_html=True)
 
