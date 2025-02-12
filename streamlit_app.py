@@ -65,10 +65,7 @@ if generate_button:
             st.write("Subracted value : ", str(sub).zfill(4))
             st.write("-" * 50)
             if last_time:
-                st.info(
-                    """The last two subtracted values are **6174**.
-                So that value will be the subtracted value for infinite times."""
-                )
+                st.info("**Step 1:** Do this\n\n**Step 2:** Do that\n\n**Step 3:** Done!")
                 break
         
             
