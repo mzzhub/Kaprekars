@@ -86,6 +86,7 @@ if generate_button:
                 time.sleep(1)
             st.write("Subracted value : ", str(sub).zfill(4))
             st.write("-" * 50)
+            time.sleep(1)
             if last_time:
                 time.sleep(1)
                 st.info("The last two subtracted values are **6174**.\n\nSo the subtracted value will be the same for infinite times.")
