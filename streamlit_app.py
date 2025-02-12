@@ -14,16 +14,17 @@ st.markdown(f"""
     </style>
     """, unsafe_allow_html=True)
 
+# Main title
 st.title("Kaprekar's Constant Attainer 🧮", anchor = False)
 
-
+# Input number
 k = st.number_input(
     "**Enetr a number**", 1, 9999, None,
     help = "Four digit number. Except same four digit.",
     placeholder = "Click Generate to calculate with a random number"
 )
 
-# Center align buttons
+# Align buttons
 col1, col2, col3 = st.columns([2, 5 ,4])
 with col1:
     generate_button = st.button("**Generate**", type = "primary", use_container_width=True)
@@ -34,11 +35,14 @@ with col3:
         help = "wikipedia.org"
         )
 
-
+# Generate button
 if generate_button:
 
+    # Generating random number if input is None
     if k == None:
         k = np.random.randint(10000)
+        
+        # simulate loading 
         with st.spinner("System is generating a random number..."):
             number = st.empty()
             time.sleep(1)
@@ -51,14 +55,20 @@ if generate_button:
             number.write(k)
             time.sleep(1)
 
+    # placeholders for precess discriptions to be displayed
     placeholder = st.empty()
 
+    # processing the number
     k_str = str(k).zfill(4) # leading zeros
     with st.spinner("Checking for all same digits..."):
         time.sleep(3)
+
+    # checking for all same digits 
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         placeholder.write("")
         st.warning(f" The number {k} have all the digits same.", icon="⚠️")
+
+        # Retry button
         col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
         with col1:
             retry_button = st.button("**Retry**", use_container_width=True)
