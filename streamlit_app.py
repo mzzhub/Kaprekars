@@ -12,10 +12,10 @@ k = st.number_input(
 )
 
 # Center align buttons
-col1, col2, col3, col4, col5, col6, col7, col8 = st.columns([2, 1, 1, 1, 1, 1, 1, 4])
+col1, col2, col3, col4, col5, col6, col7 = st.columns([2, 1, 1, 1, 1, 1, 5])
 with col1:
     generate_button = st.button("**Generate**", use_container_width=True)
-with col8:
+with col7:
     st.link_button("**What is Kaprekar's Constant?**", "https://en.wikipedia.org/wiki/6174")
 
 
