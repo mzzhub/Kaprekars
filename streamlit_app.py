@@ -21,6 +21,7 @@ if generate_button:
 
     if k == None:
         k = np.random.randint(10000)
+        k = 6666
         with st.spinner("System is generating a random number..."):
             number = st.empty()
             time.sleep(1)
@@ -91,7 +92,7 @@ if generate_button:
                     <h1 style='font-size:50px;'>
                         The last two subtracted values are 
                         <span style='color:green;'>6174</span>.<br>
-                        So the subtracted value will be the same for <span style='color:rainbow;'>&#8734;</span> times.
+                        So the subtracted value will be the same for &#8734; times.
                     </h1>
                 """, unsafe_allow_html=True)
 
