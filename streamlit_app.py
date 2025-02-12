@@ -20,11 +20,12 @@ with col1:
 
 
 if generate_button:
+    st.info("Sarting with", k)
     k_str = str(k).zfill(4) # leading zeros
     st.write("Checking for all same digits...")
     time.sleep(2)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
-        st.warning(f" The number {k} have same four digits.", icon="⚠️")
+        st.warning(f" The number {k} have all the digits same.", icon="⚠️")
         col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
         with col1:
             retry_button = st.button("**Retry**", use_container_width=True)
