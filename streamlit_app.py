@@ -40,5 +40,5 @@ if generate_button:
         k_desc = int("".join(sorted(k_str, reverse = True)))
         k_asc = int("".join(sorted(k_str)))
         time.sleep(1)
-        st.write("Decending order :", k_desc, "Ascending order : ", k_asc)
+        st.write("Decending order :", k_desc, "\nAscending order : ", k_asc)
 
