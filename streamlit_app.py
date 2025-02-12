@@ -60,7 +60,7 @@ if generate_button:
                 first_time = False
             elif sub == 6174:
                 last_time = True
-                st.info("At last, taking " + str(int(k_desc) - int(k_asc)).zfill(4))
+                st.success("At last, taking " + str(int(k_desc) - int(k_asc)).zfill(4))
                 k_str = str(int(k_desc) - int(k_asc)).zfill(4)
                 k_desc = "".join(sorted(k_str, reverse = True))
                 k_asc = "".join(sorted(k_str))
