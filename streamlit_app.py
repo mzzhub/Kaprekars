@@ -99,8 +99,8 @@ if generate_button:
                 time.sleep(5)
 
                 st.markdown("""
-                    <h1 style='font-size:50px; color:red;'>
-                        Hence Kaprekar's Constant 6174 attained
+                    <h1 style='font-size:50px;'>
+                        Hence <span style='color:green;'>Kaprekar's Constant 6174</span>attained
                     </h1>
                 """, unsafe_allow_html=True)
 
