@@ -40,8 +40,9 @@ if generate_button:
         last_time = False
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
+        sub = int(k_desc) - int(k_asc)
         while True:
-            if str(int(k_desc) - int(k_asc)).zfill(4) == "6174":
+            if sub == 6174:
                 last_time = True
             st.write("-" * 50)
             if first_time:
@@ -53,7 +54,8 @@ if generate_button:
             time.sleep(1)
             st.write("Decending order :", k_desc)
             st.write("Ascending order : ", k_asc)
-            st.write("Subracted value : ", str(int(k_desc) - int(k_asc)).zfill(4))
+            sub = int(k_desc) - int(k_asc)
+            st.write("Subracted value : ", str(sub).zfill(4))
             if last_time:
                 st.write("last")
                 break
