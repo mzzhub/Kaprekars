@@ -38,9 +38,9 @@ if generate_button:
         time.sleep(1)
         first_time = True
         last_time = False
+        k_desc = "".join(sorted(k_str, reverse = True))
+        k_asc = "".join(sorted(k_str))
         while True:
-            k_desc = "".join(sorted(k_str, reverse = True))
-            k_asc = "".join(sorted(k_str))
             if str(int(k_desc) - int(k_asc)).zfill(4) == "6174":
                 last_time = True
             st.write("-" * 50)
