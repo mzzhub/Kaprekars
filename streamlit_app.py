@@ -42,4 +42,5 @@ if generate_button:
         time.sleep(1)
         st.write("Decending order :", k_desc)
         st.write("Ascending order : ", k_asc)
+        st.write("Subracted value : ", str(int(k_desc) - int(k_asc)).zfill(4))
 
