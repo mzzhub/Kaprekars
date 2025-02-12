@@ -20,7 +20,7 @@ with col1:
 
 
 if generate_button:
-    st.info("Sarting with", k)
+    st.info(f"Sarting with {k}")
     k_str = str(k).zfill(4) # leading zeros
     st.write("Checking for all same digits...")
     time.sleep(2)
