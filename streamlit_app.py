@@ -19,7 +19,7 @@ with col3:
     st.link_button(
         label = "**What is Kaprekar's Constant?**",
         url = "https://en.wikipedia.org/wiki/6174",
-        help = "Wikipedia"
+        help = "Wikipedia",
         type = "primary"
         )
 
