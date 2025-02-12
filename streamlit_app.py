@@ -46,6 +46,7 @@ if generate_button:
     else:
         placeholder.write("Atleast two different digits included. 👍")
         time.sleep(1)
+        placeholder.write("")
         first_time = True
         last_time = False
         k_desc = "".join(sorted(k_str, reverse = True))
@@ -76,7 +77,7 @@ if generate_button:
             st.write("-" * 50)
             if last_time:
                 st.info("The last two subtracted values are **6174**.\n\nSo the subtracted value will be the same for infinite times.")
-                st.title("Hence Kaprekars Constant 6174 attained")
+                st.title("Hence Kaprekars Constant **6174** attained")
                 break
         
             
