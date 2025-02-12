@@ -51,6 +51,9 @@ if generate_button:
             else:
                 st.info("Taking " + str(int(k_desc) - int(k_asc)).zfill(4))
                 k_str = str(int(k_desc) - int(k_asc)).zfill(4)
+                k_desc = "".join(sorted(k_str, reverse = True))
+                k_asc = "".join(sorted(k_str))
+                sub = int(k_desc) - int(k_asc)
             time.sleep(1)
             st.write("Decending order :", k_desc)
             st.write("Ascending order : ", k_asc)
