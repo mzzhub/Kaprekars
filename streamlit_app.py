@@ -5,7 +5,6 @@ import time
 st.title("Kaprekars Constant Attainer 🧮")
 
 st.title("Section 1: Introduction", anchor="intro")
-st.write("Jump to this section using `#intro` in the URL.")
 
 
 k = st.number_input(
