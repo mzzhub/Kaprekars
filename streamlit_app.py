@@ -25,8 +25,7 @@ if generate_button:
 
     k_str = str(k).zfill(4) # leading zeros
     with st.spinner("Checking for all same digits..."):
-        time.sleep(5)
-    time.sleep(2)
+        time.sleep(3)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         placeholder.write("")
         st.warning(f" The number {k} have all the digits same.", icon="⚠️")
@@ -35,11 +34,11 @@ if generate_button:
             retry_button = st.button("**Retry**", use_container_width=True)
         st.stop()
     else:
-        placeholder.write("Good to go. 👍")
+        placeholder.write("Atleast two different digits included. 👍")
         time.sleep(1)
         st.info(f"Sarting with {k}")
-        k_desc = "".join(sorted(k_str, reverse = True))
-        k_asc = "".join(sorted(k_str))
+        k_desc = int("".join(sorted(k_str, reverse = True)))
+        k_asc = int("".join(sorted(k_str)))
         time.sleep(1)
-        st.write(k_desc, k_asc)
+        st.write("Decending order :", k_desc, "Ascending order : ", k_asc)
 
