@@ -21,7 +21,6 @@ if generate_button:
 
     if k == None:
         k = np.random.randint(10000)
-        k = 6666
         with st.spinner("System is generating a random number..."):
             number = st.empty()
             time.sleep(1)
