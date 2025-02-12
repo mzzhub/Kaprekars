@@ -2,9 +2,7 @@ import streamlit as st
 import numpy as np
 import time
 
-st.title("Kaprekars Constant Attainer 🧮")
-
-st.title("Section 1: Introduction", anchor="intro")
+st.title("Kaprekars Constant Attainer 🧮", anchor = False)
 
 
 k = st.number_input(
@@ -94,6 +92,3 @@ if generate_button:
                 # st.title("Hence Kaprekars Constant 6174 attained")
                 st.markdown("<h1 style='font-size:50px;'>Hence Kaprekars Constant 6174 attained</h1>", unsafe_allow_html=True)
                 break
-        
-            
-st.write("Jump to this section using `#intro` in the URL.")
