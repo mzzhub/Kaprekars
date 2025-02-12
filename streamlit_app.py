@@ -21,7 +21,7 @@ with col1:
 
 if generate_button:
 
-    placeholer = st.empty()
+    placeholder = st.empty()
 
     st.info(f"Sarting with {k}")
     k_str = str(k).zfill(4) # leading zeros
