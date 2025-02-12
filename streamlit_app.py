@@ -83,7 +83,9 @@ if generate_button:
             st.write("Subracted value : ", str(sub).zfill(4))
             st.write("-" * 50)
             if last_time:
+                time.sleep(1)
                 st.info("The last two subtracted values are **6174**.\n\nSo the subtracted value will be the same for infinite times.")
+                time.sleep(5)
                 st.title("Hence Kaprekars Constant 6174 attained")
                 break
         
