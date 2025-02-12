@@ -2,30 +2,6 @@ import streamlit as st
 import numpy as np
 import time
 
-
-import streamlit as st
-import time
-
-st.title("Dynamic Text Update in Streamlit")
-
-placeholder = st.empty()  # Create an empty container
-
-# Step-by-step updates
-placeholder.write("Step 1: Extracting digits...")
-time.sleep(1)
-
-placeholder.write("Step 2: Sorting in descending order...")
-time.sleep(1)
-
-placeholder.write("Step 3: Sorting in ascending order...")
-time.sleep(1)
-
-placeholder.write("Step 4: Subtracting numbers...")
-time.sleep(1)
-
-placeholder.success("Calculation Complete!")  # Final replacement
-
-
 st.title("Kaprekars Constant Attainer 🧮")
 
 k = st.number_input(
@@ -44,9 +20,12 @@ with col1:
 
 
 if generate_button:
+
+    placeholer = st.empty()
+
     st.info(f"Sarting with {k}")
     k_str = str(k).zfill(4) # leading zeros
-    st.write("Checking for all same digits...")
+    placeholder.write("Checking for all same digits...")
     time.sleep(2)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         st.warning(f" The number {k} have all the digits same.", icon="⚠️")
@@ -55,7 +34,7 @@ if generate_button:
             retry_button = st.button("**Retry**", use_container_width=True)
         st.stop()
     else:
-        st.write("Good to go. 👍")
+        placeholder.write("Good to go. 👍")
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
         st.write(k_desc, k_asc)
