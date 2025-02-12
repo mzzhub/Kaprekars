@@ -12,7 +12,7 @@ k = st.number_input(
 )
 
 # Center align buttons
-col1, col2, col3 = st.columns([2, 1 ,4])
+col1, col2, col3 = st.columns([2, 4 ,4])
 with col1:
     generate_button = st.button("**Generate**", use_container_width=True)
 with col3:
