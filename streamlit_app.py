@@ -42,12 +42,17 @@ if generate_button:
         k_asc = "".join(sorted(k_str))
         sub = int(k_desc) - int(k_asc)
         while True:
-            if sub == 6174:
-                last_time = True
             st.write("-" * 50)
             if first_time:
                 st.info("Sarting with " + k_str)
                 first_time = False
+            elif sub == 6174:
+                last_time = True
+                st.info("At last, taking " + str(int(k_desc) - int(k_asc)).zfill(4))
+                k_str = str(int(k_desc) - int(k_asc)).zfill(4)
+                k_desc = "".join(sorted(k_str, reverse = True))
+                k_asc = "".join(sorted(k_str))
+                sub = int(k_desc) - int(k_asc)
             else:
                 st.info("Taking " + str(int(k_desc) - int(k_asc)).zfill(4))
                 k_str = str(int(k_desc) - int(k_asc)).zfill(4)
