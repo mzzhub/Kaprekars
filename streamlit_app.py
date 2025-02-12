@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import time
 
-background_url = "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*8RGuXV5_f09ePoGjZq_S0A.png"  # Replace with your image URL
+background_url = "https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/8098/production/_108502923_b0c7bb17-bbe4-48b0-99b3-ad036de0d392.jpg.webp"  # Replace with your image URL
 
 # Inject CSS for Background Image
 st.markdown(f"""
