@@ -47,9 +47,6 @@ if generate_button:
             if first_time:
                 st.info("Sarting with " + k_str)
                 first_time = False
-            elif last_time:
-                st.write("last")
-                break
             else:
                 st.info("Taking " + str(int(k_desc) - int(k_asc)).zfill(4))
                 k_str = str(int(k_desc) - int(k_asc)).zfill(4)
@@ -57,7 +54,9 @@ if generate_button:
             st.write("Decending order :", k_desc)
             st.write("Ascending order : ", k_asc)
             st.write("Subracted value : ", str(int(k_desc) - int(k_asc)).zfill(4))
-
+            if last_time:
+                st.write("last")
+                break
         
             
 
