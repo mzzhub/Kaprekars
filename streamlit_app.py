@@ -30,6 +30,7 @@ if generate_button:
             number.write(k//10)
             time.sleep(1)
             number.write(k)
+            time.sleep(1)
 
     placeholder = st.empty()
 
@@ -70,14 +71,20 @@ if generate_button:
                 k_asc = "".join(sorted(k_str))
                 sub = int(k_desc) - int(k_asc)
             time.sleep(1)
+            with st.spinner("Sorting in descending order..."):
+                time.sleep(1)
             st.write("Decending order :", k_desc)
+            with st.spinner("Sorting in ascending order..."):
+                time.sleep(1)
             st.write("Ascending order : ", k_asc)
             sub = int(k_desc) - int(k_asc)
+            with st.spinner("Subtracting ascending from descending..."):
+                time.sleep(1)
             st.write("Subracted value : ", str(sub).zfill(4))
             st.write("-" * 50)
             if last_time:
                 st.info("The last two subtracted values are **6174**.\n\nSo the subtracted value will be the same for infinite times.")
-                st.title("Hence Kaprekars Constant **6174** attained")
+                st.title("Hence Kaprekars Constant 6174 attained")
                 break
         
             
