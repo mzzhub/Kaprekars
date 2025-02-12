@@ -12,6 +12,16 @@ k = st.number_input(
 
 if k == None:
     k = np.random.randint(10000)
+    number = st.empty()
+    with st.spinner("System is generating a random number..."):
+        time.sleep(1)
+        number.write(k//1000)
+        time.sleep(1)
+        number.write(k//100)
+        time.sleep(1)
+        number.write(k//10)
+        time.sleep(1)
+        number.write(k)
 
 # Center align buttons
 col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
