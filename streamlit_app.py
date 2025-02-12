@@ -10,19 +10,6 @@ k = st.number_input(
     placeholder = "Click Generate to calculate with a random number"
 )
 
-if k == None:
-    k = np.random.randint(10000)
-    with st.spinner("System is generating a random number..."):
-        number = st.empty()
-        time.sleep(1)
-        number.write(k//1000)
-        time.sleep(1)
-        number.write(k//100)
-        time.sleep(1)
-        number.write(k//10)
-        time.sleep(1)
-        number.write(k)
-
 # Center align buttons
 col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
 with col1:
@@ -30,6 +17,19 @@ with col1:
 
 
 if generate_button:
+
+    if k == None:
+        k = np.random.randint(10000)
+        with st.spinner("System is generating a random number..."):
+            number = st.empty()
+            time.sleep(1)
+            number.write(k//1000)
+            time.sleep(1)
+            number.write(k//100)
+            time.sleep(1)
+            number.write(k//10)
+            time.sleep(1)
+            number.write(k)
 
     placeholder = st.empty()
 
