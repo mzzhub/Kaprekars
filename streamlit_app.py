@@ -24,7 +24,7 @@ if generate_button:
     placeholder = st.empty()
 
     k_str = str(k).zfill(4) # leading zeros
-    with placeholder.spinner("Checking for all same digits..."):
+    with st.spinner("Checking for all same digits..."):
         time.sleep(5)
     time.sleep(2)
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
