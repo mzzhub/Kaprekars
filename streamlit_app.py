@@ -37,6 +37,6 @@ if generate_button:
         placeholder.write("Good to go. 👍")
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
-        timw.sleep(2)
+        time.sleep(2)
         st.write(k_desc, k_asc)
 
