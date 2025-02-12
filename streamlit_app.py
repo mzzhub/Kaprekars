@@ -91,7 +91,7 @@ if generate_button:
                     <h1 style='font-size:50px;'>
                         The last two subtracted values are 
                         <span style='color:green;'>6174</span>.<br>
-                        So the subtracted value will be the same for &#8734; times.
+                        So the subtracted value will be the same for <span style='color:rainbow;'>&#8734;</span> times.
                     </h1>
                 """, unsafe_allow_html=True)
 
