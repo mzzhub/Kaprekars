@@ -42,7 +42,6 @@ if generate_button:
         k_asc = "".join(sorted(k_str))
         sub = int(k_desc) - int(k_asc)
         while True:
-            st.write("-" * 50)
             if first_time:
                 st.info("Sarting with " + k_str)
                 first_time = False
@@ -64,6 +63,7 @@ if generate_button:
             st.write("Ascending order : ", k_asc)
             sub = int(k_desc) - int(k_asc)
             st.write("Subracted value : ", str(sub).zfill(4))
+            st.write("-" * 50)
             if last_time:
                 st.write("last")
                 break
