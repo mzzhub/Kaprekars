@@ -8,7 +8,7 @@ background_url = "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*8RGuX
 st.markdown(f"""
     <style>
     .stApp {{
-        background: linear-gradient(rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.5)),url("{background_url}") no-repeat center center fixed;
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)),url("{background_url}") no-repeat center center fixed;
         background-size: cover;
     }}
     </style>
