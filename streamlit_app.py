@@ -16,7 +16,7 @@ col1, col2, col3, col4 = st.columns([2, 2, 1, 1])
 with col1:
     generate_button = st.button("**Generate**", use_container_width=True)
 with col2:
-    st.link_button("What is Kaprekar's Constant?", "https://en.wikipedia.org/wiki/6174")
+    st.link_button("**What is Kaprekar's Constant?**", "https://en.wikipedia.org/wiki/6174")
 
 
 if generate_button:
