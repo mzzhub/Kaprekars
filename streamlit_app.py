@@ -36,7 +36,7 @@ if generate_button:
     else:
         placeholder.write("Atleast two different digits included. 👍")
         time.sleep(1)
-        st.info(f"Sarting with {k}")
+        st.info(f"Sarting with {k_str}")
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
         time.sleep(1)
