@@ -2,6 +2,18 @@ import streamlit as st
 import numpy as np
 import time
 
+background_url = "https://your-image-url.com/image.jpg"  # Replace with your image URL
+
+# Inject CSS for Background Image
+st.markdown(f"""
+    <style>
+    .stApp {{
+        background: url("{background_url}") no-repeat center center fixed;
+        background-size: cover;
+    }}
+    </style>
+    """, unsafe_allow_html=True)
+
 st.title("Kaprekar's Constant Attainer 🧮", anchor = False)
 
 
