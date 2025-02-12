@@ -37,16 +37,22 @@ if generate_button:
         placeholder.write("Atleast two different digits included. 👍")
         time.sleep(1)
         first_time = True
-        for i in range(10):
+        last_time = False
+        while True:
+            k_desc = "".join(sorted(k_str, reverse = True))
+            k_asc = "".join(sorted(k_str))
+            if str(int(k_desc) - int(k_asc)).zfill(4) == "6174":
+                last_time = True
             st.write("-" * 50)
             if first_time:
                 st.info("Sarting with " + k_str)
                 first_time = False
+            elif last_time:
+                st.write("last")
+                break
             else:
                 st.info("Taking " + str(int(k_desc) - int(k_asc)).zfill(4))
                 k_str = str(int(k_desc) - int(k_asc)).zfill(4)
-            k_desc = "".join(sorted(k_str, reverse = True))
-            k_asc = "".join(sorted(k_str))
             time.sleep(1)
             st.write("Decending order :", k_desc)
             st.write("Ascending order : ", k_asc)
