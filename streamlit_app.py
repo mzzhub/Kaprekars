@@ -23,7 +23,6 @@ if generate_button:
 
     placeholder = st.empty()
 
-    st.info(f"Sarting with {k}")
     k_str = str(k).zfill(4) # leading zeros
     placeholder.write("Checking for all same digits...")
     time.sleep(2)
@@ -35,8 +34,10 @@ if generate_button:
         st.stop()
     else:
         placeholder.write("Good to go. 👍")
+        time.sleep(1)
+        st.info(f"Sarting with {k}")
         k_desc = "".join(sorted(k_str, reverse = True))
         k_asc = "".join(sorted(k_str))
-        time.sleep(2)
+        time.sleep(1)
         st.write(k_desc, k_asc)
 
