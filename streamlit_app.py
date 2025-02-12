@@ -46,7 +46,7 @@ if generate_button:
             retry_button = st.button("**Retry**", use_container_width=True)
         st.stop()
     else:
-        placeholder.write("Atleast two different digits included. 👍")
+        placeholder.write("Atleast two different digits included. ✅")
         time.sleep(1)
         placeholder.write("")
         first_time = True
@@ -99,7 +99,7 @@ if generate_button:
 
                 st.markdown("""
                     <h1 style='font-size:50px;'>
-                        Hence go<br><span style='color:red;'>Kaprekar's Constant 6174</span><br>attained
+                        Hence,<br><span style='color:red;'>Kaprekar's Constant - 6174</span><br>attained
                     </h1>
                 """, unsafe_allow_html=True)
 
