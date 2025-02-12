@@ -99,7 +99,7 @@ if generate_button:
 
                 st.markdown("""
                     <h1 style='font-size:50px;'>
-                        Hence<br><span style='color:red;'>Kaprekar's Constant 6174</span><br>attained
+                        Hence go<br><span style='color:red;'>Kaprekar's Constant 6174</span><br>attained
                     </h1>
                 """, unsafe_allow_html=True)
 
