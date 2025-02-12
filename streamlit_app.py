@@ -44,3 +44,6 @@ if generate_button:
         st.write("Ascending order : ", k_asc)
         st.write("Subracted value : ", str(int(k_desc) - int(k_asc)).zfill(4))
 
+        for i in range(10):
+            st.warning(str(i))
+
