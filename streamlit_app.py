@@ -2,6 +2,30 @@ import streamlit as st
 import numpy as np
 import time
 
+
+import streamlit as st
+import time
+
+st.title("Dynamic Text Update in Streamlit")
+
+placeholder = st.empty()  # Create an empty container
+
+# Step-by-step updates
+placeholder.write("Step 1: Extracting digits...")
+time.sleep(1)
+
+placeholder.write("Step 2: Sorting in descending order...")
+time.sleep(1)
+
+placeholder.write("Step 3: Sorting in ascending order...")
+time.sleep(1)
+
+placeholder.write("Step 4: Subtracting numbers...")
+time.sleep(1)
+
+placeholder.success("Calculation Complete!")  # Final replacement
+
+
 st.title("Kaprekars Constant Attainer 🧮")
 
 k = st.number_input(
