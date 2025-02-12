@@ -90,8 +90,8 @@ if generate_button:
                 st.markdown("""
                     <h1 style='font-size:50px;'>
                         The last two subtracted values are 
-                        <span style='color:green;'>6174</span>.<br><br>
-                        So the subtracted value will be the same for &#8734; times.G
+                        <span style='color:green;'>6174</span>.<br>
+                        So the subtracted value will be the same for &#8734; times.
                     </h1>
                 """, unsafe_allow_html=True)
 
@@ -99,7 +99,7 @@ if generate_button:
 
                 st.markdown("""
                     <h1 style='font-size:50px;'>
-                        Hence <span style='color:green;'>Kaprekar's Constant 6174</span>attained
+                        Hence<br><span style='color:red;'>Kaprekar's Constant 6174</span><br>attained
                     </h1>
                 """, unsafe_allow_html=True)
 
