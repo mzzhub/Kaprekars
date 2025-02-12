@@ -36,14 +36,22 @@ if generate_button:
     else:
         placeholder.write("Atleast two different digits included. 👍")
         time.sleep(1)
-        st.info("Sarting with " + k_str)
-        k_desc = "".join(sorted(k_str, reverse = True))
-        k_asc = "".join(sorted(k_str))
-        time.sleep(1)
-        st.write("Decending order :", k_desc)
-        st.write("Ascending order : ", k_asc)
-        st.write("Subracted value : ", str(int(k_desc) - int(k_asc)).zfill(4))
-
+        first_time = True
         for i in range(10):
-            st.warning(str(i))
+            st.write("-" * 50)
+            if first_time:
+                st.info("Sarting with " + k_str)
+                first_time = False
+            else:
+                st.info("Taking " + str(int(k_desc) - int(k_asc)).zfill(4))
+                k_str = str(int(k_desc) - int(k_asc)).zfill(4)
+            k_desc = "".join(sorted(k_str, reverse = True))
+            k_asc = "".join(sorted(k_str))
+            time.sleep(1)
+            st.write("Decending order :", k_desc)
+            st.write("Ascending order : ", k_asc)
+            st.write("Subracted value : ", str(int(k_desc) - int(k_asc)).zfill(4))
+
+        
+            
 
