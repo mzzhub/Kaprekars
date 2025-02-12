@@ -20,7 +20,7 @@ with col3:
         label = "**What is Kaprekar's Constant?**",
         url = "https://en.wikipedia.org/wiki/6174",
         help = "Wikipedia",
-        type = "primary"
+        type = "secondary"
         )
 
 
