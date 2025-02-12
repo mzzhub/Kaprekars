@@ -87,8 +87,8 @@ if generate_button:
             if last_time:
                 time.sleep(1)
                 # st.info("The last two subtracted values are **6174**.\n\nSo the subtracted value will be the same for infinite times.")
-                st.markdown("<h1 style='font-size:50px;'>The last two subtracted values are <b>6174</b>.\n\n:streamlit:So the subtracted value will be the same for infinite :infinity: times.</h1>", unsafe_allow_html = True)
+                st.markdown("<h1 style='font-size:50px;'>The last two subtracted values are :green[6174].\n\n:streamlit:So the subtracted value will be the same for :infinity: times.</h1>", unsafe_allow_html = True)
                 time.sleep(5)
                 # st.title("Hence Kaprekars Constant 6174 attained")
-                st.markdown("<h1 style='font-size:50px;'>Hence Kaprekars Constant 6174 attained</h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='font-size:50px;'>Hence :red[Kaprekars Constant 6174] attained</h1>", unsafe_allow_html=True)
                 break
