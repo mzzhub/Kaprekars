@@ -1,19 +1,15 @@
 # 6174
-```
-Kaprekar's Constant Attainer 🧮
-```
 
+## Overview
 This Streamlit web app demonstrates the Kaprekar's Constant process. Given a four-digit number (excluding numbers with all identical digits), the app performs iterative calculations to reach Kaprekar's Constant (6174) using Kaprekar's routine. The app also includes smooth UI effects, background customization, and real-time processing animations.
 
-Features & Functionality
-🔹 User Input & Random Generation
-
-Users can enter a four-digit number manually.
-If no number is entered, the app generates a random four-digit number.
-🔹 Validation Check
-
-The app checks if all digits of the number are the same (e.g., 1111, 5555).
-If the number is invalid, the app displays a warning and allows the user to retry.
+### Features & Functionality
+- User Input & Random Generation
+    - Users can enter a four-digit number manually.
+    - If no number is entered, the app generates a random four-digit number.
+- Validation Check
+    - The app checks if all digits of the number are the same (e.g., 1111, 5555).
+    - If the number is invalid, the app displays a warning and allows the user to retry.
 🔹 Kaprekar’s Routine Execution
 
 The app performs iterative steps to reach 6174:
