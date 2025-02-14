@@ -2,18 +2,6 @@ import streamlit as st
 import numpy as np
 import time
 
-background_url = "https://github.com/mzzhub/Kaprekars/blob/master/6174.png"  # Replace with your image URL
-
-# Inject CSS for Background Image
-st.markdown(f"""
-    <style>
-    .stApp {{
-        background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)),url("{background_url}") no-repeat center center fixed;
-        background-size: cover;
-    }}
-    </style>
-    """, unsafe_allow_html=True)
-
 # Main title
 st.title("Kaprekar's Constant Attainer 🧮", anchor = False)
 
