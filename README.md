@@ -33,7 +33,8 @@ This Streamlit web app demonstrates the Kaprekar's Constant process. Given a fou
 Refer to the [Wikipedia documentation on Kaprekar's Constant](https://en.wikipedia.org/wiki/6174) for more details.
 
 ## 🧑‍💻 Try the app.
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kaprekars.streamlit.app/)
+[![Streamlit App](![image](https://github.com/user-attachments/assets/614718e7-854e-4202-ab52-481c47ef1115)
+)](https://kaprekars.streamlit.app/)
 
 
 
