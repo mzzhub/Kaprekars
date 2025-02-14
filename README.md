@@ -32,6 +32,9 @@ This Streamlit web app demonstrates the Kaprekar's Constant process. Given a fou
 ## ❔ What is 6174
 Refer to the [Wikipedia documentation on Kaprekar's Constant](https://en.wikipedia.org/wiki/6174) for more details.
 
+## 🤝 Contributing
+Contributions are welcome! If you'd like to improve this project, feel free to fork the repository and submit a pull request.
+
 ## 🧑‍💻 Try the app.
 [![image](https://github.com/user-attachments/assets/614718e7-854e-4202-ab52-481c47ef1115)](https://kaprekars.streamlit.app/)
 
