@@ -13,10 +13,10 @@ k = st.number_input(
 )
 
 # Align buttons
-col1, col2, col3 = st.columns([1, 5 ,1])
+col1, col2, col3, col4 = st.columns([1, 3, 1, 2])
 with col1:
     generate_button = st.button("**Generate**", type = "primary", use_container_width=True)
-with col3:
+with col4:
     st.link_button(
         label = "**What is Kaprekar's Constant?**",
         url = "https://en.wikipedia.org/wiki/6174",
