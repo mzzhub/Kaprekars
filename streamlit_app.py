@@ -18,7 +18,7 @@ with col1:
     generate_button = st.button("**Generate**", type = "primary", use_container_width=True)
 with col3:
     st.link_button(
-        label = "**What is Kaprekar's Constant?**   ",
+        label = "**What is Kaprekar's Constant ?**",
         url = "https://en.wikipedia.org/wiki/6174",
         help = "wikipedia.org"
         )
