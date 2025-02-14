@@ -13,7 +13,7 @@ k = st.number_input(
 )
 
 # Align buttons
-col1, col2, col3 = st.columns([1, 1 ,2])
+col1, col2, col3 = st.columns([1, 5 ,1])
 with col1:
     generate_button = st.button("**Generate**", type = "primary", use_container_width=True)
 with col3:
@@ -54,6 +54,7 @@ if generate_button:
     # checking for all same digits 
     if k_str[0] == k_str[1] == k_str[2] == k_str[3]:
         placeholder.write("")
+        st.write("")
         st.warning(f"The number {k} have all the digits same.", icon="⚠️")
 
         # Retry button
