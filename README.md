@@ -34,5 +34,7 @@ Refer to the [Wikipedia documentation on Kaprekar's Constant](https://en.wikiped
 
 ## Demo App
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kaprekars.streamlit.app/)
+## Live Preview  
+[![Kaprekar's Constant Attainer](https://img.shields.io/badge/Open-App-brightgreen)](https://kaprekars.streamlit.app/)
 
 
