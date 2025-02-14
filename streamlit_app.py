@@ -5,6 +5,12 @@ import time
 # Main title
 st.title("Kaprekar's Constant Attainer 🧮", anchor = False)
 
+st.sidebar.link_button(
+        label = "**What is Kaprekar's Constant ?**",
+        url = "https://en.wikipedia.org/wiki/6174",
+        help = "wikipedia.org"
+        )
+
 # Input number
 k = st.number_input(
     "**Enetr a number**", 1, 9999, None,
