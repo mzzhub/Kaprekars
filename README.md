@@ -29,8 +29,10 @@ This Streamlit web app demonstrates the Kaprekar's Constant process. Given a fou
     - st.spinner() adds loading indicators for sorting, subtracting, and checking conditions.
     - Step-by-step display ensures the user experiences the calculation dynamically.
 
-## Demo App
+## ❔ What is 6174
+Refer to the [Wikipedia documentation on Kaprekar's Constant](https://en.wikipedia.org/wiki/6174) for more details.
 
+## Demo App
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kaprekars.streamlit.app/)
 
 
