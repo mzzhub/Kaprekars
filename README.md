@@ -33,6 +33,7 @@ This Streamlit web app demonstrates the Kaprekar's Constant process. Given a fou
 Refer to the [Wikipedia documentation on Kaprekar's Constant](https://en.wikipedia.org/wiki/6174) for more details.
 
 ## Requirements
+- Python
 - Numpy
 - Streamlit
 
