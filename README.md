@@ -32,6 +32,10 @@ This Streamlit web app demonstrates the Kaprekar's Constant process. Given a fou
 ## ❔ What is 6174
 Refer to the [Wikipedia documentation on Kaprekar's Constant](https://en.wikipedia.org/wiki/6174) for more details.
 
+## Requirements
+- Numpy
+- Streamlit
+
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to improve this project, feel free to fork the repository and submit a pull request.
 
