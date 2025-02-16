@@ -1,5 +1,5 @@
 # 6174
-This Streamlit web app demonstrates the Kaprekar's Constant process. Given a four-digit number (excluding numbers with all identical digits), the app performs iterative calculations to reach Kaprekar's Constant (6174) using Kaprekar's routine. The app also includes smooth UI effects, background customization, and real-time processing animations.
+This Streamlit web app demonstrates the `Kaprekar's Constant` process. Given a four-digit number (excluding numbers with all identical digits), the app performs iterative calculations to reach Kaprekar's Constant (6174) using Kaprekar's routine. The app also includes smooth UI effects, background customization, and real-time processing animations.
 
 ## Features & Functionality
 - 👤 User Input & Random Generation
